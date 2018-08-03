@@ -10,12 +10,12 @@ export default [
     component: Home
   },
   {
-    path: '/about/',
-    component: About
-  },
-  {
     path: '/services/',
     component: Services
+  },
+  {
+    path: '/about/',
+    component: About
   },
   {
     path: '/about/another/',

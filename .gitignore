@@ -1,2 +1,4 @@
 .DS_Store/
+www/
+platforms/
 node_modules/

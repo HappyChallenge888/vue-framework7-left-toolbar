@@ -12,21 +12,23 @@
         "e2e": "node test/e2e/runner.js",
         "test": "npm run unit && npm run e2e",
         "lint": "eslint --ext .js,.vue src test/unit/specs test/e2e/specs",
-        "cordova-build": "npm run build && cordova build",
-        "cordova-run": "npm run build && cordova run browser",
-        "cordova-run-ios": "npm run build && cordova run ios",
-        "cordova-run-android": "npm run build && cordova run android",
+        "phonegap-build": "npm run build && phonegap build",
+        "phonegap-run": "npm run build && phonegap run browser",
+        "phonegap-run-ios": "npm run build && phonegap run ios",
+        "phonegap-run-android": "npm run build && phonegap run android",
         "copy-fonts": "cpy node_modules/framework7-icons/fonts/*.* src/fonts && cpy node_modules/material-design-icons/iconfont/*.{eot,ttf,woff,woff2} src/fonts",
         "postinstall": "npm run copy-fonts"
     },
     "dependencies": {
-        "cordova-android": "7.1.1",
-        "cordova-ios": "4.5.5",
+        "phonegap-android": "7.1.1",
+        "phonegap-ios": "4.5.5",
         "framework7": "^2.0.7",
         "framework7-icons": "^0.8.9",
         "framework7-vue": "^2.0.7",
         "material-design-icons": "^3.0.1",
-        "vue": "^2.5.2"
+        "vue": "^2.5.2",
+        "cordova-android": "7.1.1",
+        "cordova-ios": "4.5.5"
     },
     "devDependencies": {
         "autoprefixer": "^7.1.2",

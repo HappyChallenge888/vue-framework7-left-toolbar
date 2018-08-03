@@ -2,7 +2,7 @@
   <f7-page>
 
   <!-- Navigation -->
-    <f7-navbar sliding>
+    <f7-navbar sliding class="my-tool-bar">
       <f7-nav-left>
         <f7-link icon-f7="icon-bars" panel-open="left"></f7-link>
       </f7-nav-left>
@@ -14,7 +14,7 @@
   <!-- Main Content --> 
     <f7-tabs>
       <f7-tab id="service1" tab-active>
-        <Service3 />
+        <Service1 />
       </f7-tab>
       <f7-tab id="service2">
         <Service2 />
@@ -25,16 +25,16 @@
     </f7-tabs>
 
   <!-- TOOL BAR -->
-    <f7-toolbar bottom-md bottom-ios :labels="isiOS">
-      <f7-link :icon-f7="isiOS ? 'home' : ''" tab-link="#service3" active>
+    <f7-toolbar bottom-md :labels="isiOS" class="my-tool-bar">
+      <f7-link tab-link="#service1" active>
         <f7-icon f7="home"></f7-icon>
       </f7-link>
       
-      <f7-link :icon-f7="isiOS ? 'home' : ''" tab-link="#service2">
+      <f7-link tab-link="#service2">
         <f7-icon f7="search"></f7-icon>
       </f7-link>
 
-      <f7-link :icon-f7="isiOS ? 'home' : ''" tab-link="#service3">
+      <f7-link tab-link="#service3">
         <f7-icon f7="camera"></f7-icon>
       </f7-link>
     </f7-toolbar>
@@ -70,3 +70,10 @@ export default {
   }
 };
 </script>
+
+
+<style scoped>
+.my-tool-bar {
+  background-color: purple !important;
+}
+</style>

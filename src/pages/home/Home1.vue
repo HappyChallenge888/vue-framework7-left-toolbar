@@ -7,6 +7,7 @@
       Distinctio est aliquam officiis quaerat placeat, cum explicabo magni
       soluta totam maxime autem minima accusamus eos suscipit dignissimos
       corporis modi voluptatum fugiat!
+      
     </f7-block>
   </f7-page>
 </template>

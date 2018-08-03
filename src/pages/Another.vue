@@ -1,6 +1,9 @@
 <template>
-  <f7-page name="another">
-    <f7-navbar back-link="Back" sliding>
+  <f7-page name="about">
+    <f7-navbar sliding>
+      <f7-nav-left>
+        <f7-link icon-f7="icon-bars" panel-open="left"></f7-link>
+      </f7-nav-left>
       <f7-nav-title>
         Another
       </f7-nav-title>
@@ -13,6 +16,11 @@
       soluta totam maxime autem minima accusamus eos suscipit dignissimos
       corporis modi voluptatum fugiat!
     </f7-block>
+    <f7-list>
+      <f7-list-item link="/kkk/" 
+          title="KKK"
+          link-view="#main-view"></f7-list-item>
+    </f7-list>
   </f7-page>
 </template>
 
